@@ -6,6 +6,15 @@ public class BodyDriver {
 	sun.name = "Sol";
 	sun.orbits = null; // Sun don't orbit nobody
 	System.out.println(sun.toString("Hi mom"));
+	//Uses the second constructor, two parameters
+	Body jupiter = new Body();
+	jupiter.orbits = sun'
+	System.out.println(jupiter.toString());
+
+	// Uses third constructor, one parameter
+	Body jmoon = new Body("Io");
+	jmoon.orbits = jupiter;
+	System.out.println(jmoon.toString());
 
 	// This uses the second constructor, two parameters
 	Body earth = new Body(sun,"Earth");
